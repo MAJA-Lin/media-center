@@ -1,6 +1,8 @@
 <?php
 	session_start();
 	include_once("my_func.php");
+	ini_set( "display_errors", 0);
+	login_check($_COOKIE['login_chk']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,10 +11,6 @@
 		<title>Profile</title>
 	</head>
 	<body>
-		<?php
-		ini_set( "display_errors", 0);
-		login_check($_COOKIE['login_chk']);
-		?>
 		<div>
 			<h2>Welcome! <?php echo $_SESSION['userid']; ?><br></h2>
 		</div>

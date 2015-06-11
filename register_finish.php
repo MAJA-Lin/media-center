@@ -77,9 +77,9 @@
                 //Timezone seems to be "+6" on wamp on my PC.
                 $dtime = date("Y-m-d H:i:s",mktime (date('H')+6, date('i'), date('s'), date('m'), date('d'), date('Y')));
                 //If userid and userno are unique, then insert.
-                $sql2 = "INSERT INTO user (userid, password, email, register_date) VALUES ('$userid', '$pw', '$email', '$dtime')";
+                $sql_insert = "INSERT INTO user (userid, password, email, register_date) VALUES ('$userid', '$pw', '$email', '$dtime')";
 
-                if(mysqli_query($link, $sql2)) {
+                if(mysqli_query($link, $sql_insert)) {
                     /*
                     echo 'Successful!';
                     echo 'Now is '.$dtime;

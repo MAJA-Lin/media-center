@@ -4,9 +4,8 @@
 	ini_set( "display_errors", 0);
 	login_check($_COOKIE['login_chk']);
 ?>
+
 <!DOCTYPE html>
-
-
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
