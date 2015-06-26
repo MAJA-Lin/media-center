@@ -4,6 +4,10 @@
 	start_error();
 	include_once("book_func.php");
 	$books = $_GET['books'];
+	include_once("book_comment.php");
+
+	$comment = $_COOKIE['comment'];
+	$comment = json_decode($comment, true);
 ?>
 
 
@@ -25,8 +29,11 @@
 	<div id="profile">
 		<?php
 			book_detail($books);
-			//book_comment($books);
+			book_comment_detail($comment);
 		?>
+	</div>
+	<div id="comment">
+		<!-- -->
 	</div>
 	<div>
 		<ui>

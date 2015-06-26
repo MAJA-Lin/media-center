@@ -32,10 +32,10 @@
 				<input type="varchar" name="search" placeholder="Search">
 				<input type="submit" name="button" value="submit">
 			</form>
-			<a href="#">
+			<a href="book_progress.php">
 				<h2>What am I reading?</h2>
 			</a>
-			<a href="#">
+			<a href="book_add.php">
 				<h2>Add Books</h2>
 			</a>
 			<a href="#">

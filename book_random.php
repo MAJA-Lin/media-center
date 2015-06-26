@@ -15,11 +15,11 @@
 	}
 
 	if(isset($array_random)) {
-		//$array_query = base64_encode(json_encode($array_query));
 
+		//$array_random = base64_encode(json_encode($array_random));
 		$array_random = json_encode($array_random);
 		setcookie("random", $array_random, time()+3600 );
-		//redir("movie_query_result.php");
+		$_COOKIE['random'] = $array_random;
 	}
 
 ?>

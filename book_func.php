@@ -54,7 +54,6 @@
 
 	Function book_detail($books) {
 
-		var_dump($books);
 		if (isset($books['book_cht_name'])) {
 			echo "<li><h2>Title: ".$books['book_cht_name']."</h2>";
 
@@ -70,10 +69,13 @@
 			echo "<li><h2>".$books['book_original_name']."</h2></li>";
 		}
 
+		/*
 		echo "Author: ".$books['author'];
 		echo "Tag: ".$books['tag1']." ".$books['tag2']." ".$books['tag3']." ".$books['tag4']." ".$books['tag5'];
 		echo "Purchased date".$books['purchased_date']."Price: ".$books['price']." Purchased way: ".$books['purchased_way'];
 		echo "Plot: ".$books['description'];
+		*/
+		var_dump($books);
 
 
 	}
