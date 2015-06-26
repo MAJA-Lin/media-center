@@ -38,8 +38,8 @@
 			<a href="book_add.php">
 				<h2>Add Books</h2>
 			</a>
-			<a href="#">
-				<h2>Update follow-up</h2>
+			<a href="simple_index.php">
+				<h2>Main Menu</h2>
 			</a>
 		</div>
 	</body>
