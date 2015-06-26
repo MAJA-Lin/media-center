@@ -1,6 +1,21 @@
 <?php
 
-	Function my_header($redirect){
+	/*
+	*session start & login check;
+	*user can also choose to enable error display or not.
+	*/
+	Function start_without_error() {
+		session_start();
+		login_check($_COOKIE['login_chk']);
+		ini_set( "display_errors", 0);
+	}
+
+	Function start_error() {
+		session_start();
+		login_check($_COOKIE['login_chk']);
+	}
+
+	Function redir($redirect) {
 		/*
 		echo "<script>";
 		echo "location.href='".$redirect."'";

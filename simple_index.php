@@ -25,7 +25,7 @@
 				<li><a href="movie_index.php">
 					<h3>Movie Database</h3>
 				</a></li>
-				<li><a href="#">
+				<li><a href="book_index.php">
 					<h3>Book Database</h3>
 				</a></li>
 				<li><a href="#">
