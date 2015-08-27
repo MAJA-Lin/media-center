@@ -19,7 +19,7 @@
 		*But I use ASSOC instead to improve readability.
 		*
 		*And here can simply modified to  $array_query[$i] = $row
-		*See the detail in ramdom_book.php
+		*See the detail in book_random.php
 		*/
 		$array_query[$i]['movie_no'] = $row['movie_no'];
 		$array_query[$i]['cht_name'] = $row['movie_Cht_name'];

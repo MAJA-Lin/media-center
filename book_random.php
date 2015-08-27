@@ -9,7 +9,7 @@
 
 	while($row = mysqli_fetch_array($result)) {
 
-		$array_random[$i]=$row;
+		$array_random[$i] = $row;
 		//var_dump($array_random[$i]);
 		$i++;
 	}

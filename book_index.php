@@ -29,7 +29,13 @@
 		</div>
 		<div>
 			<form action="book_query.php" method="get">
-				<input type="varchar" name="search" placeholder="Search">
+				<input type="varchar" name="search" placeholder="Search books">
+				<select id="type" name="type">
+					<option value="book_name">Books name</option>
+					<option value="author">Author name</option>
+					<option value="purchased_year">Purchased date</option>
+					<option value="isbn">ISBN</option>
+				</select>
 				<input type="submit" name="button" value="submit">
 			</form>
 			<a href="book_progress.php">

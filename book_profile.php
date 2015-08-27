@@ -17,14 +17,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Book Profile</title>
+	<title><?php echoname($books); ?></title>
 </head>
 <body>
-	<div>
-		<ui>
-			<li><a href="book_index.php"><h3>Book index</h3></a></li>
-		</ui>
-	</div>
 	<div id="profile">
 		<?php
 			book_detail($books);
@@ -36,13 +31,19 @@
 	</div>
 	<div>
 		<ui>
-			<li><a href="#">Update books profile</a></li>
-			<li><a href="#">Write new comment</a></li>
+			<li><a href="#"><h2>Update books profile</h2></a></li>
+			<li><a href="#"><h2>Write new comment</h2></a></li>
 		</ui>
 	</div>
 	<div>
 		<form action="book_query.php" method="get">
-			<input type="varchar" name="search" placeholder="Search">
+			<input type="varchar" name="search" placeholder="Search books">
+			<select id="type" name="type">
+				<option value="book_name">Books name</option>
+				<option value="author">Author name</option>
+				<option value="purchased_year">Purchased date</option>
+				<option value="isbn">ISBN</option>
+			</select>
 			<input type="submit" name="button" value="submit">
 		</form>
 		<a href="book_index.php">
